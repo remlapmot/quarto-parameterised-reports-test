@@ -13,10 +13,14 @@ from IPython.display import Markdown
 hide_some_things = True
 ```
 
-`{python} Markdown("::: {.content-hidden}") if hide_some_things else 0`
+`{python} Markdown("::: {.content-hidden}") if hide_some_things else None`
 
 ```{python}
-print("Hello, World.")
+print("Hidden")
 ```
 
-`{python} Markdown(":::") if hide_some_things else 0`
+`{python} Markdown(":::") if hide_some_things else None`
+
+```{python}
+print("Shown")
+```
