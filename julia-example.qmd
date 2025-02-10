@@ -1,0 +1,10 @@
+---
+format:
+  html:
+    embed-resources: true
+jupyter: julia
+---
+
+```{julia}
+println("Hidden")
+```
