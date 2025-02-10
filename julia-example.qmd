@@ -10,19 +10,19 @@ jupyter: julia-1.11
 using Markdown
 ```
 
-`{julia} md"::: {.content-hidden}"`
+`{julia} true ? md"::: {.content-hidden}" : md""`
 
 ```{julia}
 println("Hidden")
 ```
 
-`{julia} md":::"`
+`{julia} true ? md":::" : md""`
 
 
-`{julia} md"::: {.content-visible}"`
+`{julia} true ? md"::: {.content-visible}" : Nothing()`
 
 ```{julia}
 println("Shown")
 ```
 
-`{julia} md":::"`
+`{julia} true ? md":::" : Nothing()`
