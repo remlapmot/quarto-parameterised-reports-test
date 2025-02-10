@@ -1,17 +1,22 @@
 ---
-format: html
+format:
+  html:
+    embed-resources: true
 ---
 
 ```{python}
-my_condition = False
+#| include: false
+from IPython.display import Markdown
 ```
-
-`{python} if my_condition: "::: {.content-hidden}"`
 
 ```{python}
-#| eval: !expr python import os; os.getenv('VAR') == 'production'
-
-1+1
+hide_some_things = True
 ```
 
-`{python} if my_condition: ":::"`
+`{python} Markdown("::: {.content-hidden}") if hide_some_things else 0`
+
+```{python}
+print("Hello, World.")
+```
+
+`{python} Markdown(":::") if hide_some_things else 0`
