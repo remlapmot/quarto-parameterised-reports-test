@@ -1,0 +1,17 @@
+---
+format: html
+---
+
+```{python}
+my_condition = False
+```
+
+`{python} if my_condition: "::: {.content-hidden}"`
+
+```{python}
+#| eval: !expr python import os; os.getenv('VAR') == 'production'
+
+1+1
+```
+
+`{python} if my_condition: ":::"`
