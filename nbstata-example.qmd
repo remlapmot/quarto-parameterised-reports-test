@@ -5,30 +5,18 @@ format:
 jupyter: nbstata
 ---
 
-```{stata}
-*%%noecho
-if 1 display "::: {.content-hidden}"
-```
+`{stata} "::: {.content-hidden}"`
 
 ```{stata}
 display "Hidden"
 ```
 
-```{stata}
-*%%noecho
-if 1 display ":::"
-```
+`{stata} ":::"`
 
-```{stata}
-*%%noecho
-if 1 display "::: {.content-visible}"
-```
+`{stata} "::: {.content-visible}"`
 
 ```{stata}
 display "Shown"
 ```
 
-```{stata}
-*%%noecho
-if 1 display ":::"
-```
+`{stata} ":::"`
