@@ -26,3 +26,11 @@ println("Shown")
 ```
 
 `{julia} true ? md":::" : Nothing()`
+
+`{julia} false ? md"" : md"::: {.content-hidden}"`
+
+```{julia}
+println("Hidden")
+```
+
+`{julia} false ? md"" : md":::"`
