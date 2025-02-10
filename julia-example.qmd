@@ -2,9 +2,27 @@
 format:
   html:
     embed-resources: true
-jupyter: julia
+jupyter: julia-1.11
 ---
+
+```{julia}
+#| include: false
+using Markdown
+```
+
+`{julia} md"::: {.content-hidden}"`
 
 ```{julia}
 println("Hidden")
 ```
+
+`{julia} md":::"`
+
+
+`{julia} md"::: {.content-visible}"`
+
+```{julia}
+println("Shown")
+```
+
+`{julia} md":::"`
