@@ -8,6 +8,7 @@ engine: julia
 ```{julia}
 #| include: false
 using Markdown
+show_questions = true
 hide_solutions = true
 ```
 
@@ -18,3 +19,11 @@ println("Hidden")
 ```
 
 `{julia} hide_solutions ? md":::" : md""`
+
+`{julia} show_questions ? md"::: {.content-visible}" : md""`
+
+```{julia}
+println("Shown")
+```
+
+`{julia} show_questions ? md":::" : md""`
