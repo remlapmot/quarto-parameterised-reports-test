@@ -1,0 +1,29 @@
+---
+format:
+  html:
+    embed-resources: true
+jupyter: julia-1.11
+---
+
+```{julia}
+#| include: false
+using Markdown
+hide_some_things = true
+show_some_things = true
+```
+
+`{julia} hide_some_things ? md"::: {.content-hidden}" : md""`
+
+```{julia}
+println("Hidden")
+```
+
+`{julia} hide_some_things ? md":::" : md""`
+
+`{julia} show_some_things ? md"::: {.content-visible}" : Nothing()`
+
+```{julia}
+println("Shown")
+```
+
+`{julia} show_some_things ? md":::" : Nothing()`
