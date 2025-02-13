@@ -1,5 +1,5 @@
 ---
-title: "Test child documents with different engines"
+title: "Test embedding documents using different engines"
 format:
   html:
     embed-resources: true
