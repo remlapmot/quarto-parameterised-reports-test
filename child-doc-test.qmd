@@ -6,6 +6,7 @@ format:
 notebook-links: false
 ---
 
+::: {.panel-tabset}
 ## R
 
 ```{r}
@@ -20,3 +21,4 @@ notebook-links: false
 
 {{< embed _stata-code-test.qmd#plot echo=true >}}
 
+:::
