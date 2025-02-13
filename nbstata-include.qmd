@@ -19,7 +19,7 @@ knitr::opts_chunk$set(include = params$solutions)
 
 <!-- `r if (!params$solutions) ":::"` -->
 
-`r if (params$solutions) "{{< embed _stata-code-test-2.qmd echo=true >}}"`
+`{r} if (params$solutions) I("{{< embed _stata-code-test-2.qmd echo=true >}}")`
 
 <!-- Returns an extra NULL in the output -->
 <!-- `{r} if (!params$solutions) I("::: {.content-hidden}")` -->
