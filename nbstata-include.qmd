@@ -13,11 +13,13 @@ notebook-links: false
 knitr::opts_chunk$set(include = params$solutions)
 ```
 
-`r if (!params$solutions) "::: {.content-hidden}"`
+<!-- `r if (!params$solutions) "::: {.content-hidden}"` -->
 
-{{< embed _stata-code-test-2.qmd echo=true >}}
+<!-- {{< embed _stata-code-test-2.qmd echo=true >}} -->
 
-`r if (!params$solutions) ":::"`
+<!-- `r if (!params$solutions) ":::"` -->
+
+`r if (params$solutions) "{{< embed _stata-code-test-2.qmd echo=true >}}"`
 
 <!-- Returns an extra NULL in the output -->
 <!-- `{r} if (!params$solutions) I("::: {.content-hidden}")` -->
