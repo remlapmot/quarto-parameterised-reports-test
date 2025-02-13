@@ -1,0 +1,23 @@
+---
+title: A test Stata document
+format:
+  html:
+    embed-resources: true
+jupyter: nbstata
+---
+  
+```{stata}
+*| label: hello
+display "Hello from Stata"
+```
+
+```{stata}
+*| label: reg
+sysuse auto, clear
+regress price mpg
+```
+
+```{stata}
+*| label: plot
+twoway function x^2
+```
