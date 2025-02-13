@@ -1,0 +1,22 @@
+---
+title: "Test child documents with different engines"
+format:
+  html:
+    embed-resources: true
+notebook-links: false
+---
+
+## R
+
+```{r}
+1 + 1
+```
+
+## Stata
+
+{{< embed _stata-code-test.qmd#hello echo=true >}}
+
+{{< embed _stata-code-test.qmd#reg echo=true >}}
+
+{{< embed _stata-code-test.qmd#plot echo=true >}}
+
