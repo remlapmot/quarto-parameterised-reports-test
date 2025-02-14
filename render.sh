@@ -12,3 +12,6 @@ cp embed-doc-test.html docs/index.html
 
 quarto render _stata-code-test-2.qmd --execute
 quarto render nbstata-include.qmd
+
+quarto render contents-test.qmd
+quarto render contents-test-2.qmd
