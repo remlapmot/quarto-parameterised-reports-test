@@ -1,0 +1,29 @@
+---
+format:
+  html:
+    embed-resources: true
+jupyter: nbstata
+---
+
+```{stata}
+*| include: false
+scalar hide_solutions_open = "::: {.content-hidden}"
+scalar hide_solutions_close = ":::"
+scalar show_solutions = " "
+```
+
+`{stata} scalar(hide_solutions_open)`
+
+```{stata}
+display "Hidden"
+```
+
+`{stata} scalar(hide_solutions_close)`
+
+`{stata} scalar(show_solutions)`
+
+```{stata}
+display "Shown"
+```
+
+`{stata} scalar(show_solutions)`
