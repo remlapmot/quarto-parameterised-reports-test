@@ -161,3 +161,5 @@ cython_debug/
 .Rproj.user
 .quarto/
 .Rhistory
+
+/.quarto/
