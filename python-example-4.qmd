@@ -1,0 +1,31 @@
+---
+format:
+  html:
+    embed-resources: true
+jupyter: python3
+---
+
+```{python}
+#| include: false
+#| tags: [parameters]
+hide_answers = False
+```
+
+```{python}
+#| include: false
+from IPython.display import Markdown
+```
+
+`{python} Markdown("::: {.content-hidden}") if hide_answers else None`
+
+```{python}
+print("Hidden")
+```
+
+`{python} Markdown(":::") if hide_answers else None`
+
+```{python}
+print("Shown")
+```
+
+Some more text
