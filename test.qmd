@@ -1,0 +1,12 @@
+---
+title: Test
+format:
+  html:
+    embed-resources: true
+jupyter: python3
+---
+
+```{python}
+import os
+print(os.getenv('MYVAR'))
+```
