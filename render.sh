@@ -18,7 +18,14 @@ quarto render contents-test-2.qmd
 
 quarto render nbstata-example-2.qmd --execute
 
-HIDE_ANSWERS=1 quarto render nbstata-example-3.qmd --execute
-HIDE_ANSWERS=0 quarto render nbstata-example-3.qmd -o nbstata-example-3-false.html --execute
+HIDE_ANSWERS_STATA=1 quarto render nbstata-example-3.qmd
+HIDE_ANSWERS_STATA=0 quarto render nbstata-example-3.qmd -o nbstata-example-3-false.html
 
-HIDE_ANSWERS=true quarto render julia-example-3.qmd --execute
+HIDE_ANSWERS_JULIA=true quarto render julia-example-3.qmd
+HIDE_ANSWERS_JULIA=false quarto render julia-example-3.qmd -o julia-example-3-false.html
+
+quarto render python-example-2.qmd -P hide_answers:True
+quarto render python-example-2.qmd -P hide_answers:False -o python-example-2-false.html
+
+HIDE_ANSWERS_PYTHON=True quarto render python-example-3.qmd
+HIDE_ANSWERS_PYTHON=False quarto render python-example-3.qmd -o python-example-3-false.html
