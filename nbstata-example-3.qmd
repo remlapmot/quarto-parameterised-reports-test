@@ -7,7 +7,7 @@ jupyter: nbstata
 
 ```{stata}
 *| include: false
-local hide_answers : env HIDE_ANSWERS
+local hide_answers : env HIDE_ANSWERS_STATA
 if (`hide_answers') {
     scalar hide_answers_open = "::: {.content-hidden}"
     scalar hide_answers_close = ":::"     
@@ -29,3 +29,5 @@ display "Hidden"
 ```{stata}
 display "Shown"
 ```
+
+Some more text
