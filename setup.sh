@@ -11,4 +11,7 @@ uv pip install jupyterlab nbstata jupyterlab_stata_highlight2 papermill
 # Not used: julia --project=@quarto -e 'import Pkg; Pkg.add("QuartoNotebookRunner")'
 # Install IJulia
 # https://github.com/JuliaLang/IJulia.jl
+
+./render.sh
+
 deactivate
