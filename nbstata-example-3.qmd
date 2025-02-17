@@ -1,0 +1,31 @@
+---
+format:
+  html:
+    embed-resources: true
+jupyter: nbstata
+---
+
+```{stata}
+*| include: false
+local hide_answers : env HIDE_ANSWERS
+if (`hide_answers') {
+    scalar hide_answers_open = "::: {.content-hidden}"
+    scalar hide_answers_close = ":::"     
+}
+else {
+    scalar hide_answers_open = " "
+    scalar hide_answers_close = " "
+}
+```
+
+`{stata} scalar(hide_answers_open)`
+
+```{stata}
+display "Hidden"
+```
+
+`{stata} scalar(hide_answers_close)`
+
+```{stata}
+display "Shown"
+```
