@@ -27,5 +27,7 @@ HIDE_ANSWERS_JULIA=false quarto render julia-example-3.qmd -o julia-example-3-fa
 quarto render python-example-2.qmd -P hide_answers:True
 quarto render python-example-2.qmd -P hide_answers:False -o python-example-2-false.html
 
-HIDE_ANSWERS_PYTHON=True quarto render python-example-3.qmd
-HIDE_ANSWERS_PYTHON=False quarto render python-example-3.qmd -o python-example-3-false.html
+# Use .env file
+# quarto render python-example-3.qmd --execute-daemon-restart --execute
+quarto render python-example-3.qmd --no-cache
+quarto render python-example-3.qmd -o python-example-3-false.html --no-cache
