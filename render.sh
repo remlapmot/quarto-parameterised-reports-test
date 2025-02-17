@@ -34,3 +34,9 @@ quarto render python-example-2.qmd -P hide_answers:False -o python-example-2-fal
 quarto render python-example-3.qmd --no-cache
 HIDE_ANSWERS_PYTHON=True quarto render python-example-3.qmd --no-cache
 HIDE_ANSWERS_PYTHON=False quarto render python-example-3.qmd -o python-example-3-false.html --no-cache
+
+HIDE_ANSWERS_PYTHON=True python3 -c "import os; print(os.getenv('HIDE_ANSWERS_PYTHON'))"
+HIDE_ANSWERS_PYTHON=False python3 -c "import os; print(os.getenv('HIDE_ANSWERS_PYTHON'))"
+
+HIDE_ANSWERS_JULIA=true julia -e 'println(ENV["HIDE_ANSWERS_JULIA"])'
+HIDE_ANSWERS_JULIA=false julia -e 'println(ENV["HIDE_ANSWERS_JULIA"])'
