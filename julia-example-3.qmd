@@ -8,7 +8,12 @@ engine: julia
 ```{julia}
 #| include: false
 using Markdown
-hide_answers = parse(Bool, ENV["HIDE_ANSWERS"])
+hide_answers = parse(Bool, ENV["HIDE_ANSWERS_JULIA"])
+```
+
+```{julia}
+println(hide_answers)
+println(ENV["HIDE_ANSWERS_JULIA"])
 ```
 
 `{julia} hide_answers ? md"::: {.content-hidden}" : md""`
@@ -22,3 +27,5 @@ println("Hidden")
 ```{julia}
 println("Shown")
 ```
+
+Some more text
