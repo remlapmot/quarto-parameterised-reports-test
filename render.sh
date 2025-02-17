@@ -42,3 +42,9 @@ HIDE_ANSWERS_JULIA=true julia -e 'println(ENV["HIDE_ANSWERS_JULIA"])'
 HIDE_ANSWERS_JULIA=false julia -e 'println(ENV["HIDE_ANSWERS_JULIA"])'
 HIDE_ANSWERS_JULIA=true julia -E 'ENV["HIDE_ANSWERS_JULIA"]'
 HIDE_ANSWERS_JULIA=false julia -E 'ENV["HIDE_ANSWERS_JULIA"]'
+
+quarto render python-example-4.qmd -P hide_answers:True
+quarto render python-example-4.qmd -P hide_answers:False -o python-example-4-false.html
+
+quarto render julia-example-4.qmd -P hide_answers:true
+quarto render julia-example-4.qmd -P hide_answers:false -o julia-example-4-false.html
