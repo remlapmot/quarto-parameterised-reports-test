@@ -1,0 +1,24 @@
+---
+format:
+  html:
+    embed-resources: true
+engine: julia
+---
+
+```{julia}
+#| include: false
+using Markdown
+hide_answers = parse(Bool, ENV["HIDE_ANSWERS"])
+```
+
+`{julia} hide_answers ? md"::: {.content-hidden}" : md""`
+
+```{julia}
+println("Hidden")
+```
+
+`{julia} hide_answers ? md":::" : md""`
+
+```{julia}
+println("Shown")
+```
