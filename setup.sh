@@ -5,7 +5,7 @@ source .venv/bin/activate
 
 # For nbstata example
 # In Stata: python set exec ~/.local/bin/python3, perm
-uv pip install jupyterlab nbstata jupyterlab_stata_highlight2 papermill
+uv pip install jupyterlab nbstata jupyterlab_stata_highlight2 papermill python-dotenv
 
 # For Julia example
 # Not used: julia --project=@quarto -e 'import Pkg; Pkg.add("QuartoNotebookRunner")'
