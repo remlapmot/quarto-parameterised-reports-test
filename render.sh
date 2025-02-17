@@ -21,8 +21,10 @@ quarto render nbstata-example-2.qmd --execute
 HIDE_ANSWERS_STATA=1 quarto render nbstata-example-3.qmd
 HIDE_ANSWERS_STATA=0 quarto render nbstata-example-3.qmd -o nbstata-example-3-false.html
 
-HIDE_ANSWERS_JULIA=true quarto render julia-example-3.qmd
-HIDE_ANSWERS_JULIA=false quarto render julia-example-3.qmd -o julia-example-3-false.html
+# use .env
+quarto render julia-example-3.qmd
+# HIDE_ANSWERS_JULIA=true quarto render julia-example-3.qmd
+# HIDE_ANSWERS_JULIA=false quarto render julia-example-3.qmd -o julia-example-3-false.html
 
 quarto render python-example-2.qmd -P hide_answers:True
 quarto render python-example-2.qmd -P hide_answers:False -o python-example-2-false.html
