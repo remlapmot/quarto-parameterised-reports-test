@@ -19,3 +19,5 @@ quarto render contents-test-2.qmd
 quarto render nbstata-example-2.qmd --execute
 
 HIDE_ANSWERS=1 quarto render nbstata-example-3.qmd --execute
+
+HIDE_ANSWERS=true quarto render julia-example-3.qmd --execute
