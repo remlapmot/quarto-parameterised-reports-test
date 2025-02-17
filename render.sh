@@ -40,3 +40,5 @@ HIDE_ANSWERS_PYTHON=False python3 -c "import os; print(os.getenv('HIDE_ANSWERS_P
 
 HIDE_ANSWERS_JULIA=true julia -e 'println(ENV["HIDE_ANSWERS_JULIA"])'
 HIDE_ANSWERS_JULIA=false julia -e 'println(ENV["HIDE_ANSWERS_JULIA"])'
+HIDE_ANSWERS_JULIA=true julia -E 'ENV["HIDE_ANSWERS_JULIA"]'
+HIDE_ANSWERS_JULIA=false julia -E 'ENV["HIDE_ANSWERS_JULIA"]'
