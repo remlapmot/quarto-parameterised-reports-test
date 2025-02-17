@@ -1,0 +1,29 @@
+---
+format:
+  html:
+    embed-resources: true
+engine: julia
+---
+
+```{julia}
+#| tags: [parameters]
+```
+
+```{julia}
+#| include: false
+using Markdown
+```
+
+`{julia} hide_answers ? md"::: {.content-hidden}" : md""`
+
+```{julia}
+println("Hidden")
+```
+
+`{julia} hide_answers ? md":::" : md""`
+
+```{julia}
+println("Shown")
+```
+
+Some more text
