@@ -1,0 +1,18 @@
+---
+format:
+  html:
+    embed-resources: true
+params:
+  hide_answers: true
+---
+
+```{r}
+#| include: false
+# An R code chunk, so inline code is not first in document.
+```
+
+`r if (params$hide_answers) "::: {.content-hidden}"`
+
+Text and code for answers.
+
+`r if (params$hide_answers) ":::"`
