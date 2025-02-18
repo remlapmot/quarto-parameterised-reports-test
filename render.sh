@@ -31,9 +31,12 @@ quarto render python-example-2.qmd -P hide_answers:False -o python-example-2-fal
 
 # Use .env file
 # quarto render python-example-3.qmd --execute-daemon-restart --execute
-quarto render python-example-3.qmd --no-cache
-HIDE_ANSWERS_PYTHON=True quarto render python-example-3.qmd --no-cache
-HIDE_ANSWERS_PYTHON=False quarto render python-example-3.qmd -o python-example-3-false.html --no-cache
+# quarto render python-example-3.qmd --no-cache
+# HIDE_ANSWERS_PYTHON=True quarto render python-example-3.qmd --no-cache
+# HIDE_ANSWERS_PYTHON=False quarto render python-example-3.qmd -o python-example-3-false.html --no-cache
+
+# Set environment variable in _environment
+quarto render
 
 HIDE_ANSWERS_PYTHON=True python3 -c "import os; print(os.getenv('HIDE_ANSWERS_PYTHON'))"
 HIDE_ANSWERS_PYTHON=False python3 -c "import os; print(os.getenv('HIDE_ANSWERS_PYTHON'))"
