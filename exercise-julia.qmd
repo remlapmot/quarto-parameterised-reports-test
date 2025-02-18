@@ -1,0 +1,23 @@
+---
+format:
+  html:
+    embed-resources: true
+engine: julia
+---
+
+```{julia}
+#| tags: [parameters]
+```
+
+```{julia}
+#| include: false
+using Markdown
+```
+
+`{julia} hide_answers ? md"::: {.content-hidden}" : md""`
+
+```{julia}
+println("Hidden in questions")
+```
+
+`{julia} hide_answers ? md":::" : md""`
