@@ -53,3 +53,6 @@ quarto render exercise-r.qmd -P hide_answers:true -o exercise-r-questions.html
 quarto render exercise-r.qmd -P hide_answers:false -o exercise-r-solutions.html
 quarto render exercise-r.qmd -P hide_answers:TRUE -o exercise-r-questions.html
 quarto render exercise-r.qmd -P hide_answers:FALSE -o exercise-r-solutions.html
+
+quarto render exercise-python.qmd -o exercise-python-questions.html
+quarto render exercise-python.qmd -P hide_answers:False -o exercise-python-solutions.html
