@@ -60,3 +60,6 @@ quarto render exercise-python.qmd -P hide_answers:False -o exercise-python-solut
 
 HIDE_ANSWERS_STATA=1 quarto render exercise-stata.qmd -o exercise-stata-questions.html
 HIDE_ANSWERS_STATA=0 quarto render exercise-stata.qmd -o exercise-stata-solutions.html
+
+quarto render exercise-julia.qmd -P hide_answers:true -o exercise-julia-questions.html
+quarto render exercise-julia.qmd -P hide_answers:false -o exercise-julia-solutions.html
