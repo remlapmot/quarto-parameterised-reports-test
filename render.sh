@@ -49,6 +49,7 @@ quarto render python-example-4.qmd -P hide_answers:False -o python-example-4-fal
 quarto render julia-example-4.qmd -P hide_answers:true
 quarto render julia-example-4.qmd -P hide_answers:false -o julia-example-4-false.html
 
+quarto render exercise-r.qmd -o exercise-r-questions.html
 quarto render exercise-r.qmd -P hide_answers:true -o exercise-r-questions.html
 quarto render exercise-r.qmd -P hide_answers:false -o exercise-r-solutions.html
 quarto render exercise-r.qmd -P hide_answers:TRUE -o exercise-r-questions.html
