@@ -7,8 +7,12 @@ params:
 engine: knitr
 ---
 
-`{r} ifelse(params$hide_answers, I("::: {.content-hidden}"), "")`
+```{r}
+is.logical(params$hide_answers)
+```
+
+`{r} ifelse(params$hide_answers, cat("::: {.content-hidden}\n"), cat("\n"))`
 
 Text and code for answers.
 
-`{r} ifelse(params$hide_answers, I(":::"), "")`
+`{r} ifelse(params$hide_answers, cat(":::\n"), cat("\n"))`
