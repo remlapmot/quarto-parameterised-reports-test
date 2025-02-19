@@ -1,0 +1,14 @@
+---
+format:
+  html:
+    embed-resources: true
+params:
+  hide_answers: true
+engine: knitr
+---
+
+`{r} ifelse(params$hide_answers, I("::: {.content-hidden}"), "")`
+
+Text and code for answers.
+
+`{r} ifelse(params$hide_answers, I(":::"), "")`
