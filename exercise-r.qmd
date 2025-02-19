@@ -4,12 +4,8 @@ format:
     embed-resources: true
 params:
   hide_answers: true
+engine: knitr
 ---
-
-```{r}
-#| include: false
-# An R code chunk, so inline code is not first in document.
-```
 
 `r if (params$hide_answers) "::: {.content-hidden}"`
 
