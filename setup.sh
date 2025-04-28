@@ -1,3 +1,6 @@
+# required so nbstata can find pystata package
+export PYTHONPATH=/Applications/Stata/utilities
+
 uv python install 3.13 --preview
 uv venv --python 3.13
 
