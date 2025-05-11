@@ -4,4 +4,11 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "jupyter-cache>=1.0.1",
+    "jupyterlab>=4.4.2",
+    "jupyterlab-stata-highlight2>=0.1.2",
+    "nbstata>=0.8.2",
+    "papermill>=2.6.0",
+    "python-dotenv>=1.1.0",
+]
