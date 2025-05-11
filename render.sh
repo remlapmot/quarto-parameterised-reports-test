@@ -1,3 +1,5 @@
+R -e 'source("render.R")'
+
 quarto render exercise-r.qmd -o exercise-r-questions.html
 quarto render exercise-r.qmd -P hide_answers:FALSE -o exercise-r-solutions.html
 
