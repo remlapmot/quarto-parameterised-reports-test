@@ -19,7 +19,13 @@ uv pip install jupyterlab nbstata jupyterlab_stata_highlight2 papermill python-d
 
 deactivate
 
+# Alternative code to define as Python project (with pyproject.toml)
+export PYTHONPATH=/Applications/Stata/utilities
 uv init
 uv add jupyterlab nbstata jupyterlab_stata_highlight2 papermill python-dotenv jupyter-cache
+source .venv/bin/activate
+python -m nbstata.install
 # restore from pyproject.toml and uv.lock with
 # uv sync
+./render.sh
+deactivate
