@@ -1,7 +1,0 @@
-project:
-  type: default
-  render:
-    - "python-example-3.qmd"
-
-execute:
-  freeze: false

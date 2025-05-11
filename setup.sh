@@ -18,3 +18,8 @@ uv pip install jupyterlab nbstata jupyterlab_stata_highlight2 papermill python-d
 ./render.sh
 
 deactivate
+
+uv init
+uv add jupyterlab nbstata jupyterlab_stata_highlight2 papermill python-dotenv jupyter-cache
+# restore from pyproject.toml and uv.lock with
+# uv sync
