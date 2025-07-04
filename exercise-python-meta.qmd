@@ -22,7 +22,7 @@ ymltxt = f"  solutions: {solutions}"
 `{python} Markdown(ymltxt)`
 `{python} Markdown("---")`
 
-::: {.content-hidden unless-meta="params.solutions"}
+::: {.content-visible when-meta="params.solutions"}
 ```{python}
 print("A solution, which is hidden in questions")
 ```
