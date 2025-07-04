@@ -156,6 +156,7 @@ dependencies = [
     { name = "traitlets" },
     { name = "traittypes" },
 ]
+sdist = { url = "https://files.pythonhosted.org/packages/7d/c6/061d10301f3e02e7791e02d1a016550ea5bd01197f1f7ca057b65ad2cd11/bqplot-0.12.44.tar.gz", hash = "sha256:39f33232ae4b102ec8ef1c116e05601059519ed316c4e9899c0310e3ed23f29e", size = 1205540, upload-time = "2025-05-21T17:27:29.815Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/92/bf/2ebe83bc691f5f7e68702caa38cca78d74f8a03b87eb962b62382d38490c/bqplot-0.12.44-py2.py3-none-any.whl", hash = "sha256:cad65bf5c4ce7ea7b03e1c674340f9274c0975941e63057831b29f7c2c37f144", size = 1237151, upload-time = "2024-12-24T14:19:25.301Z" },
 ]
@@ -1269,6 +1270,7 @@ dependencies = [
     { name = "nbstata" },
     { name = "papermill" },
     { name = "python-dotenv" },
+    { name = "pyyaml" },
 ]
 
 [package.metadata]
@@ -1279,6 +1281,7 @@ requires-dist = [
     { name = "nbstata", specifier = ">=0.8.2" },
     { name = "papermill", specifier = ">=2.6.0" },
     { name = "python-dotenv", specifier = ">=1.1.0" },
+    { name = "pyyaml", specifier = ">=6.0.2" },
 ]
 
 [[package]]

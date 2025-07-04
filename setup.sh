@@ -22,7 +22,7 @@ deactivate
 # Alternative code to define as Python project (with pyproject.toml)
 export PYTHONPATH=/Applications/Stata/utilities
 uv init
-uv add jupyterlab nbstata jupyterlab_stata_highlight2 papermill python-dotenv jupyter-cache
+uv add jupyterlab nbstata jupyterlab_stata_highlight2 papermill python-dotenv jupyter-cache pyyaml
 source .venv/bin/activate
 python -m nbstata.install --sys-prefix
 # restore from pyproject.toml and uv.lock with
