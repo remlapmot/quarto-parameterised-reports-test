@@ -16,18 +16,18 @@ solutions = True
 from IPython.display import Markdown
 ```
 
-`{python} Markdown("---")`
+`{python} "---"`
 ```{python}
 #| label: metadata-block
 #| echo: false
 #| output: asis
 import yaml
-params_yaml = ('params:\n'
-  f'solutions: {solutions}\n')
+params_yaml = ("params:\n"
+  f"solutions: {solutions}\n")
 params = yaml.safe_load(params_yaml)
 yaml.dump(params, default_flow_style=False)
 ```
-`{python} Markdown("---")`
+`{python} "---"`
 
 ::: {.content-hidden when-meta="params.solutions"}
 ```{python}
