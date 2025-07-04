@@ -17,3 +17,6 @@ quarto render exercise-r-2.qmd -P hide_answers:false -o exercise-r-2-solutions.h
 
 quarto render exercise-python-meta.qmd -P solutions:false -o exercise-python-meta-questions.html
 quarto render exercise-python-meta.qmd -o exercise-python-meta-solutions.html
+
+quarto render exercise-stata-meta.qmd -P solutions:false -o exercise-stata-meta-questions.html
+quarto render exercise-stata-meta.qmd -o exercise-stata-meta-solutions.html

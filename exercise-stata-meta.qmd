@@ -1,0 +1,29 @@
+---
+format:
+  html:
+    embed-resources: true
+jupyter: nbstata
+---
+
+```{python}
+#| include: false
+#| tags: [parameters]
+solutions = 'true'
+```
+
+```{python}
+#| include: false
+from IPython.display import Markdown
+ymltxt = f"  solutions: {solutions}"
+```
+
+`{python} Markdown("---")`
+`{python} Markdown("params:")`
+`{python} Markdown(ymltxt)`
+`{python} Markdown("---")`
+
+::: {.content-visible when-meta="params.solutions"}
+```{stata}
+display "A solution, which is hidden in questions"
+```
+:::
