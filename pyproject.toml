@@ -11,4 +11,5 @@ dependencies = [
     "nbstata>=0.8.2",
     "papermill>=2.6.0",
     "python-dotenv>=1.1.0",
+    "pyyaml>=6.0.2",
 ]
