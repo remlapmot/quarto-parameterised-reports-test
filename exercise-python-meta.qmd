@@ -15,12 +15,16 @@ solutions = 'true'
 #| include: false
 from IPython.display import Markdown
 ymltxt = f"  solutions: {solutions}"
+if solutions == 'true':
+    titletxt = "title: Solutions document"
+else:
+    titletxt = "title: Questions document"
 ```
 
 `{python} Markdown("---")`
 `{python} Markdown("params:")`
 `{python} Markdown(ymltxt)`
-`{python} Markdown("title: Test title")`
+`{python} Markdown(titletxt)`
 `{python} Markdown("---")`
 
 ::: {.content-visible when-meta="params.solutions"}
