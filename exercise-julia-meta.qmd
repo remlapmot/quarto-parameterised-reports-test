@@ -25,7 +25,6 @@ println(ymltxt)
 println("---")
 ```
 
-
 ::: {.content-visible when-meta="params.solutions"}
 ```{julia}
 println("A solution, hidden in questions")
