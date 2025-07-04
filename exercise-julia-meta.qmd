@@ -14,10 +14,13 @@ engine: julia
 using Markdown
 ```
 
-`{julia} md"---"`
+`{julia} "---"`
+`{julia} ""`
 `{julia} md"params:"`
-`{julia} solutions ? md"  solutions: true" : md"  solutions: false"`
-`{julia} md"---"`
+`{julia} solutions ? "  solutions: true" : "  solutions: false"`
+`{julia} ""`
+`{julia} "---"`
+`{julia} ""`
 
 ::: {.content-visible when-meta="parameters.solutions"}
 ```{julia}
