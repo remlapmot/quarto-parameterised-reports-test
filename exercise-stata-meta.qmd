@@ -5,22 +5,16 @@ format:
 jupyter: nbstata
 ---
 
-```{python}
-#| include: false
-#| tags: [parameters]
-solutions = 'true'
+```{stata}
+*| include: false
+local solutions : env SOLUTIONS_STATA
+scalar ymltxt = "  solutions: `solutions'"
 ```
 
-```{python}
-#| include: false
-from IPython.display import Markdown
-ymltxt = f"  solutions: {solutions}"
-```
-
-`{python} Markdown("---")`
-`{python} Markdown("params:")`
-`{python} Markdown(ymltxt)`
-`{python} Markdown("---")`
+`{stata} "---"`
+`{stata} "params:"`
+`{stata} scalar(ymltxt)`
+`{stata} "---"`
 
 ::: {.content-visible when-meta="params.solutions"}
 ```{stata}
