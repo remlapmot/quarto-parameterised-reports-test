@@ -28,7 +28,12 @@ params = yaml.safe_load(params_yaml)
 yaml.dump(params, default_flow_style=False)
 ```
 
-::: {.content-hidden when-meta="parameters.solutions"}
+---
+params:
+  solutions: true
+---
+
+::: {.content-hidden when-meta="params.solutions"}
 ```{python}
 print("A solution, which is hidden in questions")
 ```
