@@ -20,3 +20,6 @@ quarto render exercise-python-meta.qmd -o exercise-python-meta-solutions.html
 
 quarto render exercise-stata-meta.qmd -P solutions:false -o exercise-stata-meta-questions.html
 quarto render exercise-stata-meta.qmd -o exercise-stata-meta-solutions.html
+
+SOLUTIONS_STATA=false quarto render exercise-stata-meta.qmd -o exercise-stata-meta-questions.html
+SOLUTIONS_STATA=true quarto render exercise-stata-meta.qmd -o exercise-stata-meta-solutions.html
