@@ -1,0 +1,23 @@
+---
+format:
+  html:
+    embed-resources: true
+jupyter: python3
+---
+
+```{python}
+#| include: false
+#| tags: [parameters]
+hide_answers = True
+```
+
+```{python}
+#| include: false
+from IPython.display import Markdown
+```
+
+::: {.content-hidden when-meta="params.hide_answers"}
+```{python}
+print("Hidden in answers")
+```
+:::
