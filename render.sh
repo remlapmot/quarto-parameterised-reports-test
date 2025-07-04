@@ -24,5 +24,5 @@ quarto render exercise-stata-meta.qmd -o exercise-stata-meta-solutions.html
 SOLUTIONS_STATA=false quarto render exercise-stata-meta.qmd -o exercise-stata-meta-questions.html
 SOLUTIONS_STATA=true quarto render exercise-stata-meta.qmd -o exercise-stata-meta-solutions.html
 
-quarto render exercise-julia-meta.qmd -P solutions:false -o exercise-stata-meta-questions.html
-quarto render exercise-julia-meta.qmd -P solutions:true -o exercise-stata-meta-solutions.html
+quarto render exercise-julia-meta.qmd -P solutions:false -o exercise-julia-meta-questions.html
+quarto render exercise-julia-meta.qmd -P solutions:true -o exercise-julia-meta-solutions.html
