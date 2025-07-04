@@ -14,3 +14,6 @@ quarto render exercise-julia.qmd -P hide_answers:false -o exercise-julia-solutio
 
 quarto render exercise-r-2.qmd -o exercise-r-2-questions.html
 quarto render exercise-r-2.qmd -P hide_answers:false -o exercise-r-2-solutions.html
+
+quarto render exercise-python-meta.qmd -o exercise-python-meta-questions.html
+quarto render exercise-python-meta.qmd -P hide_answers:False -o exercise-python-meta-solutions.html
