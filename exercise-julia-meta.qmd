@@ -1,0 +1,27 @@
+---
+format:
+  html:
+    embed-resources: true
+engine: julia
+---
+
+```{julia}
+#| tags: [parameters]
+```
+
+```{julia}
+#| include: false
+using Markdown
+ymltxt = "  solutions: " * solutions
+```
+
+`{julia} md"---"`
+`{julia} "params:"`
+`{julia} ymltxt`
+`{julia} md"---"`
+
+::: {.content-visible when-meta="params.solutions"}
+```{julia}
+println("A solution, hidden in questions")
+```
+:::
