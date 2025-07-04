@@ -8,7 +8,7 @@ jupyter: python3
 ```{python}
 #| include: false
 #| tags: [parameters]
-hide_answers = True
+solutions = True
 ```
 
 ```{python}
@@ -16,8 +16,8 @@ hide_answers = True
 from IPython.display import Markdown
 ```
 
-::: {.content-hidden when-meta="params.hide_answers"}
+::: {.content-hidden when-meta="params.solutions"}
 ```{python}
-print("Hidden in answers")
+print("A solution, which is hidden in questions")
 ```
 :::
