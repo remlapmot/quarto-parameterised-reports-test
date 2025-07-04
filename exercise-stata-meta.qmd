@@ -9,11 +9,18 @@ jupyter: nbstata
 *| include: false
 local solutions : env SOLUTIONS_STATA
 scalar ymltxt = "  solutions: `solutions'"
+if "`solutions'" == "true" {
+  scalar titletxt = "title: Solutions document"
+}
+else {
+  scalar titletxt = "title: Questions document"
+}
 ```
 
 `{stata} "---"`
 `{stata} "params:"`
 `{stata} scalar(ymltxt)`
+`{stata} scalar(titletxt)`
 `{stata} "---"`
 
 ::: {.content-visible when-meta="params.solutions"}
