@@ -20,6 +20,7 @@ ymltxt = f"  solutions: {solutions}"
 `{python} Markdown("---")`
 `{python} Markdown("params:")`
 `{python} Markdown(ymltxt)`
+`{python} Markdown("title: Test title")`
 `{python} Markdown("---")`
 
 ::: {.content-visible when-meta="params.solutions"}
