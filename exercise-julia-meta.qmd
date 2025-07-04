@@ -12,15 +12,14 @@ engine: julia
 ```{julia}
 #| include: false
 using Markdown
-ymltxt = "  solutions: " * solutions
 ```
 
 `{julia} md"---"`
-`{julia} "params:"`
-`{julia} ymltxt`
+`{julia} md"params:"`
+`{julia} solutions ? md"  solutions: true" : md"  solutions: false"`
 `{julia} md"---"`
 
-::: {.content-visible when-meta="params.solutions"}
+::: {.content-visible when-meta="parameters.solutions"}
 ```{julia}
 println("A solution, hidden in questions")
 ```
