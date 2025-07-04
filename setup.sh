@@ -24,7 +24,7 @@ export PYTHONPATH=/Applications/Stata/utilities
 uv init
 uv add jupyterlab nbstata jupyterlab_stata_highlight2 papermill python-dotenv jupyter-cache
 source .venv/bin/activate
-python -m nbstata.install
+python -m nbstata.install --sys-prefix
 # restore from pyproject.toml and uv.lock with
 # uv sync
 ./render.sh
