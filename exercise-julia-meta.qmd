@@ -10,19 +10,23 @@ engine: julia
 ```
 
 ```{julia}
-#| include: false
-using Markdown
+#| echo: false
+#| output: asis
+println("---")
+if solutions
+  println("title: Solutions document")
+  ymltxt = "  solutions: true"
+else
+  println("title: Questions document")
+  ymltxt = "  solutions: false"
+end
+println("params:")
+println(ymltxt)
+println("---")
 ```
 
-`{julia} "---"`
-`{julia} ""`
-`{julia} md"params:"`
-`{julia} solutions ? "  solutions: true" : "  solutions: false"`
-`{julia} ""`
-`{julia} "---"`
-`{julia} ""`
 
-::: {.content-visible when-meta="parameters.solutions"}
+::: {.content-visible when-meta="params.solutions"}
 ```{julia}
 println("A solution, hidden in questions")
 ```
