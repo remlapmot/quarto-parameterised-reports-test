@@ -8,28 +8,21 @@ jupyter: python3
 ```{python}
 #| include: false
 #| tags: [parameters]
-solutions = True
+solutions = 'true'
 ```
 
 ```{python}
 #| include: false
 from IPython.display import Markdown
+ymltxt = f"  solutions: {solutions}"
 ```
 
-`{python} "---"`
-```{python}
-#| label: metadata-block
-#| echo: false
-#| output: asis
-import yaml
-params_yaml = ("params:\n"
-  f"solutions: {solutions}\n")
-params = yaml.safe_load(params_yaml)
-yaml.dump(params, default_flow_style=False)
-```
-`{python} "---"`
+`{python} Markdown("---")`
+`{python} Markdown("params:")`
+`{python} Markdown(ymltxt)`
+`{python} Markdown("---")`
 
-::: {.content-hidden when-meta="params.solutions"}
+::: {.content-hidden unless-meta="params.solutions"}
 ```{python}
 print("A solution, which is hidden in questions")
 ```
