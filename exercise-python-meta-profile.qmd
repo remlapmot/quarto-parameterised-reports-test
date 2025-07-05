@@ -1,0 +1,14 @@
+---
+format:
+  html:
+    embed-resources: true
+jupyter: python3
+---
+
+```{python}
+print("The code which is echoed in questions and evaluated in solutions.")
+```
+
+::: {.content-visible unless-profile="questions"}
+The text for the solutions.
+:::
