@@ -9,6 +9,6 @@ jupyter: python3
 print("The code which is echoed in questions and evaluated in solutions.")
 ```
 
-::: {.content-visible unless-profile="questions"}
+::: {.content-visible unless-profile="python-questions"}
 The text for the solutions.
 :::
