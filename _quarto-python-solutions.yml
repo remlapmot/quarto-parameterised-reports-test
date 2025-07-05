@@ -1,1 +1,4 @@
+project:
+  render:
+    - exercise-python-meta-profile.qmd
 title: 'Solutions document: Python verison'

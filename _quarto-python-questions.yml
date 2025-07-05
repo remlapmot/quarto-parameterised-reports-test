@@ -1,3 +1,6 @@
+project:
+  render:
+    - exercise-python-meta-profile.qmd
 title: 'Questions document: Python version'
 execute:
   eval: false

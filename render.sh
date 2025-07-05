@@ -25,5 +25,5 @@ quarto render exercise-julia-meta.qmd -P solutions:false -o exercise-julia-meta-
 quarto render exercise-julia-meta.qmd -P solutions:true -o exercise-julia-meta-solutions.html
 
 # profiles
-quarto render exercise-python-meta-profile.qmd --profile python-questions -o exercise-python-meta-profile-questions.html
-quarto render exercise-python-meta-profile.qmd --profile python-solutions -o exercise-python-meta-profile-solutions.html
+quarto render --profile python-questions -o exercise-python-meta-profile-questions.html
+quarto render --profile python-solutions -o exercise-python-meta-profile-solutions.html
