@@ -1,0 +1,12 @@
+---
+format:
+  html:
+    embed-resources: true
+jupyter: python3
+---
+
+::: {.content-visible when-meta="params.solutions"}
+```{python}
+print("A solution, which is hidden in questions")
+```
+:::
