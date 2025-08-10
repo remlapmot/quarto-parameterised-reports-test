@@ -11,6 +11,7 @@ To recreate the Python virtual environment and render the output run
 ```sh
 uv sync
 source .venv/bin/activate
+python -m nbstata.install
 ./render.sh
 deactivate
 ```
