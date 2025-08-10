@@ -7,17 +7,19 @@ format:
 
 Documents to accompany my blogpost <https://remlapmot.github.io/post/2025/quarto-conditional-content/>.
 
-* [Example R questions 1](./exercise-r-questions.html)
-* [Example R solutions 1](./exercise-r-solutions.html)
-
-* [Example R questions 2](./exercise-r-2-questions.html)
-* [Example R solutions 2](./exercise-r-2-solutions.html)
-
-* [Example Python questions](./exercise-python-questions.html)
-* [Example Python solutions](./exercise-python-solutions.html)
-
-* [Example Stata questions](./exercise-stata-questions.html)
-* [Example Stata solutions](./exercise-stata-solutions.html)
-
-* [Example Julia questions](./exercise-julia-questions.html)
-* [Example Julia solutions](./exercise-julia-solutions.html)
+* R
+  * [Example R Markdown questions](./exercise-questions.html)
+  * [Example R Markdown solutions](./exercise-solutions.html)
+  * [Example R questions 1](./exercise-r-questions.html)
+  * [Example R solutions 1](./exercise-r-solutions.html)
+  * [Example R questions 2](./exercise-r-2-questions.html)
+  * [Example R solutions 2](./exercise-r-2-solutions.html)
+* Python
+  * [Example Python questions](./exercise-python-questions.html)
+  * [Example Python solutions](./exercise-python-solutions.html)
+* Stata
+  * [Example Stata questions](./exercise-stata-questions.html)
+  * [Example Stata solutions](./exercise-stata-solutions.html)
+* Julia
+  * [Example Julia questions](./exercise-julia-questions.html)
+  * [Example Julia solutions](./exercise-julia-solutions.html)
