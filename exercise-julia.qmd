@@ -6,10 +6,6 @@ engine: julia
 ---
 
 ```{julia}
-#| tags: [parameters]
-```
-
-```{julia}
 #| include: false
 using Markdown
 ```
